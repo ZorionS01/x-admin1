@@ -1,0 +1,24 @@
+server:
+  port: 9999
+spring:
+  datasource:
+    username: root
+    password: szw123
+    url: jdbc:mysql://localhost:3306/xdb?serverTimezone=UTC
+
+  redis:
+    host: localhost
+    port: 6379
+    password: szw123
+
+logging:
+  level:
+    com.szw: debug
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
+
